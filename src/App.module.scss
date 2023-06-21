@@ -1,0 +1,38 @@
+@use "./styles/mixins.scss";
+
+.App {
+  max-width: 112.5rem;
+  margin: 1.6rem auto;
+
+  padding: 1.6rem 6.4rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10rem);
+
+  background-color: var(--container-background-color);
+  box-shadow: var(--box-shadow-page);
+
+  @include mixins.respond(tab-land) {
+    max-width: 100%;
+    margin: auto auto;
+    border-radius: 0;
+  }
+
+  @include mixins.respond(tab-port) {
+    max-width: 100%;
+    margin: auto auto;
+    border-radius: 0;
+  }
+  @include mixins.respond(big-desktop) {
+    // margin: 1.6rem 1.6rem;
+  }
+}
+
+.particle {
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  filter: blur(10rem);
+
+  z-index: -1;
+  background-color: rgba(84, 209, 255, 35%);
+}

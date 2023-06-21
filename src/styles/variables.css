@@ -1,0 +1,55 @@
+:root {
+  --color-primary: #54d1ff;
+  --color-pimary-light: #c8f0ff;
+  --color-primary-dark: #0a5a91;
+  --color-font-primary: #132331;
+  --color-font-secondary: #4c6c87;
+  --color-font-tertiary: #b4c6d3;
+  --color-background: #f6f7f7;
+  --color-container-background: rgba(246, 247, 247, 50%);
+  --color-background-light: #ebeff2;
+  --color-link-hover: #0c9cd1;
+
+  --box-shadow-page: 0 0.3rem 2.9rem rgba(131, 131, 129, 15%);
+
+  --box-shadow-containers: 0 0.1rem 0.4rem rgba(149, 149, 149, 15%),
+    0 0.1rem 1.6rem rgba(149, 149, 149, 25%);
+
+  --box-shadow-cta-hero-btn: 0 0.3rem 0.5rem rgba(124, 124, 124, 15%);
+
+  --box-shadow-input-focus: 0 0.5rem 2rem rgba(84, 209, 255, 19%);
+
+  --inset-box-shadow-container: inset 0px 0.1rem 0.4rem rgba(0, 0, 0, 15%);
+  --box-shadow-toggle-button: inset 0px -0.2rem 0.4rem rgba(0, 0, 0, 15%),
+    0px 0.1rem 0.2rem rgba(0, 0, 0, 25%);
+}
+
+[data-theme="dark"] {
+  --color-primary: #54d1ff;
+  --color-pimary-light: #c8f0ff;
+  --color-primary-dark: #0a5a91;
+  --color-font-primary: #f6f7f7;
+  --color-font-secondary: #4c6c87;
+  --color-font-tertiary: #b4c6d3;
+  --color-background: #132331;
+  --color-container-background: rgba(19, 35, 49, 50%);
+  --color-background-light: #1a2e3f;
+  --color-link-hover: #54d1ff;
+
+  --box-shadow-page: 0 0.3rem 2.9rem rgba(0, 0, 0, 21%);
+
+  --box-shadow-containers: 0 0.1rem 0.4rem rgba(0, 0, 0, 15%),
+    0 0.4rem 1.6rem rgba(0, 0, 0, 20%);
+
+  --box-shadow-cta-hero-btn: 0 0.3rem 0.5rem rgba(0, 0, 0, 15%);
+
+  --box-shadow-input-focus: 0 0.5rem 2rem rgba(84, 209, 255, 19%);
+
+  --inset-box-shadow-container: inset 0px 0.1rem 0.4rem rgba(0, 0, 0, 40%);
+  --box-shadow-toggle-button: inset 0px -0.2rem 0.4rem rgba(0, 0, 0, 40%),
+    0px 0.1rem 0.2rem rgba(0, 0, 0, 40%);
+}
+
+* :not(div) {
+  transition: background-color fill 0.3s ease-in-out;
+}

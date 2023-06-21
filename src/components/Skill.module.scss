@@ -1,0 +1,53 @@
+.skill__ {
+  &container {
+    height: 7.2rem;
+    width: 25.6rem;
+    background-color: var(--color-background);
+    color: var(--color-font-primary);
+    font-size: 1.6rem;
+    border-radius: 0.2rem;
+    box-shadow: var(--box-shadow-cta-hero-btn);
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    gap: 0.8rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    // transform: translateY();
+  }
+
+  &icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &info_ {
+    &container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &knowledge_ {
+      &container {
+        height: 0.4rem;
+        width: 100%;
+        background-color: var(--color-pimary-light);
+        border-radius: 0.2rem;
+        position: relative;
+      }
+
+      &indicator {
+        height: 0.6rem;
+
+        background-color: var(--color-primary);
+        border-radius: 0.2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

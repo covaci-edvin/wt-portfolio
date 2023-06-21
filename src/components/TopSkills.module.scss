@@ -1,0 +1,51 @@
+.container {
+  background-color: var(--color-background-light);
+  box-shadow: var(--box-shadow-containers);
+  border-radius: 0.2rem;
+  width: 100%;
+  bottom: 0;
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 3.8rem;
+  justify-content: space-between;
+  transform: translateY(-25%);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.link {
+  cursor: pointer;
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  color: var(--color-font-secondary);
+  transition: all 0.3s;
+
+  &__text {
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+
+  &:hover {
+    .link__arrow {
+      animation: bounce 1s infinite;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+}

@@ -1,0 +1,59 @@
+@use "./styles/mixins.scss";
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 56.25%;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  @include mixins.respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include mixins.respond(phone) {
+    font-size: 43.7%;
+  }
+
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #00000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #54d1ff84;
+    border-radius: 1rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  // outline: 1px solid limegreen !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}

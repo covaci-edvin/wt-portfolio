@@ -1,0 +1,21 @@
+.nav__ {
+  &container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 48rem;
+  }
+
+  &element {
+    color: var(--color-font-primary);
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+}

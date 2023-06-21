@@ -1,0 +1,116 @@
+.hero__ {
+  margin: 4rem 0;
+  &container {
+    display: flex;
+    color: var(--color-font-primary);
+    position: relative;
+  }
+
+  &greeting {
+    font-size: 6.4rem;
+    font-weight: 600;
+    width: 37.9rem;
+    line-height: 140%;
+    // background-color: aqua;
+  }
+
+  &name {
+    font-weight: 900;
+    font-size: 8rem;
+  }
+
+  &description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 32rem;
+    margin-top: 1.6rem;
+  }
+
+  &position {
+    font-weight: 500;
+    margin-right: 0.6rem;
+  }
+
+  &about-container {
+    flex-basis: 50%;
+  }
+
+  &cta_container {
+    height: 4.8rem;
+    width: 35.6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+    font-size: 1.6rem;
+    margin-top: 3.2rem;
+  }
+
+  &cta--projects {
+    cursor: pointer;
+    flex-grow: 1;
+    border: none;
+    color: var(--color-background);
+    border-radius: 0.2rem;
+    background-color: var(--color-font-primary);
+    box-shadow: var(--box-shadow-cta-hero-btn);
+
+    &:hover {
+      background-color: var(--color-link-hover);
+    }
+  }
+
+  &cta--contact {
+    cursor: pointer;
+    border: 1px solid var(--color-font-primary);
+    border-radius: 0.2rem;
+    color: var(--color-font-primary);
+    background-color: transparent;
+    box-shadow: var(--box-shadow-cta-hero-btn);
+    flex-grow: 1;
+
+    &:hover {
+      border: 1px solid var(--color-link-hover);
+      color: var(--color-link-hover);
+    }
+  }
+
+  &image-container {
+    flex-basis: 50%;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &photo {
+    object-fit: cover;
+    width: 29rem;
+    height: 29rem;
+    border-radius: 50%;
+    object-position: top 0 right 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  &experience {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    top: 0;
+    right: 0;
+    gap: 0.8rem;
+
+    &-text {
+      text-align: end;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    &-years {
+      font-size: 8rem;
+      font-weight: 700;
+    }
+  }
+}

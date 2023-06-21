@@ -1,0 +1,12 @@
+.nav__ {
+  &container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+  }
+  &logo {
+    height: 2.4rem;
+    fill: var(--color-primary);
+  }
+}

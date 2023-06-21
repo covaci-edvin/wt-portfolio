@@ -1,0 +1,22 @@
+.toggle {
+  height: 3.2rem;
+  width: 6.4rem;
+  background-color: transparent;
+  border-radius: 5rem;
+  box-shadow: var(--inset-box-shadow-container);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  &__button {
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: var(--color-primary);
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow-toggle-button);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
